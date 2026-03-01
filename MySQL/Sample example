@@ -1,0 +1,14 @@
+CREATE TABLE student (
+    sid INT PRIMARY KEY AUTO_INCREMENT,
+    sname VARCHAR(50) NOT NULL,
+    course VARCHAR(50) NOT NULL,
+    subname VARCHAR(50) NOT NULL,
+    marks INT NOT NULL
+);
+INSERT INTO student (sname, course, subname, marks)
+VALUES 
+('Ravi', 'BCA', 'Database', 85),
+('Mahi', 'BSc', 'Mathematics', 90),
+('Arun', 'BTech', 'Programming', 78),
+('Divya', 'BCom', 'Accounting', 88),
+('Kiran', 'BCA', 'Networking', 92);
