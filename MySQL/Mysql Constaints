@@ -1,0 +1,16 @@
+CREATE TABLE student (
+    sid INT PRIMARY KEY,
+    sname VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE,
+    age INT CHECK (age >= 18),
+    marks INT CHECK (marks BETWEEN 0 AND 100),
+    course_id INT,
+    FOREIGN KEY (course_id) REFERENCES course(course_id)
+);
+INSERT INTO student VALUES
+(101, 'Ravi', 'ravi@gmail.com', 20, 85, 1),
+(102, 'Mahi', 'mahi@gmail.com', 21, 90, 2),
+(101, 'Arun', 'arun@gmail.com', 22, 75, 1),
+(103, 'Divya', 'ravi@gmail.com', 22, 80, 1);
+(104, 'Kiran', 'kiran@gmail.com', 17, 95, 2);
+(105, 'Ajay', 'ajay@gmail.com', 22, 70, 10);
